@@ -1,0 +1,309 @@
+<!doctype html><html lang="sk"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>MAK palacinkáreň · sladké a slané palacinky v Trenčíne — neoficiálny návrh</title>
+<meta name="description" content="Neoficiálny návrh webu MAK palacinkáreň, Štúrovo námestie 121, Trenčín. Sladké aj slané palacinky.">
+<meta name="theme-color" content="#fbede6">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blush:#fbede6; --blush2:#f6dccf; --petal:#f3b9a6;
+  --poppy:#f4390f; --poppy-d:#c92c07; --seed:#24212b; --seed2:#34303d;
+  --crepe:#e7b65c; --txt:#2a2530; --soft:#6b5f63;
+  --hl:rgba(42,37,48,.14);
+  --o:"Oleo Script",Georgia,serif; --r:"Rubik",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{background:var(--blush);color:var(--txt);font:400 17px/1.6 var(--r);padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--seed);outline-offset:3px}
+.in{width:min(1180px,100% - 32px);margin-inline:auto}
+.bar{background:var(--seed);color:#fbede6;text-align:center;font:500 13px/1.45 var(--r);padding:9px 16px}
+.cap{font:500 12.5px/1.3 var(--r);letter-spacing:.18em;text-transform:uppercase}
+.tn{font-variant-numeric:tabular-nums}
+.seeds{background-image:radial-gradient(ellipse 2px 1.5px at 50% 50%,rgba(36,33,43,.22) 98%,transparent),radial-gradient(ellipse 1.5px 2px at 50% 50%,rgba(36,33,43,.16) 98%,transparent);background-size:23px 19px,31px 27px;background-position:0 0,11px 7px}
+
+/* header */
+.hd{display:flex;align-items:center;gap:26px;min-height:80px}
+.logo{display:inline-flex;align-items:center;gap:12px;text-decoration:none}
+.ring{width:56px;height:56px;border:2px solid var(--poppy);border-radius:50%;display:grid;place-items:center;color:var(--poppy);font:300 20px/1 var(--r);letter-spacing:.06em}
+.logo b{font:300 15px/1.2 var(--r);letter-spacing:.2em;color:var(--poppy)}
+.menu{display:flex;gap:6px;margin-left:auto}
+.menu a{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;text-decoration:none;font-weight:500;background:linear-gradient(var(--poppy),var(--poppy)) 12px calc(100% - 10px)/0 1px no-repeat;transition:background-size .2s}
+.menu a:hover{background-size:calc(100% - 24px) 1px}
+.call{display:inline-flex;align-items:center;min-height:46px;padding:0 20px;border-radius:999px;background:var(--poppy-d);color:#fff;text-decoration:none;font-weight:500}
+.call:hover{background:var(--seed)}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:30px 0 70px}
+.hero .in{display:grid;grid-template-columns:1fr 1.02fr;gap:40px;align-items:center}
+.hero h1{font:400 clamp(64px,8.6vw,118px)/.9 var(--o);color:var(--seed);margin:18px 0 18px}
+.hero h1 em{display:block;font:300 clamp(24px,2.9vw,38px)/1 var(--r);letter-spacing:.26em;color:var(--poppy);margin-top:14px}
+.hero p.lead{font-size:19px;max-width:27em;color:var(--txt)}
+.acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.b{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 24px;border-radius:999px;font:500 16px/1 var(--r);text-decoration:none;border:2px solid var(--seed)}
+.b.p{background:var(--poppy-d);border-color:var(--poppy-d);color:#fff}.b.p:hover{background:var(--seed);border-color:var(--seed)}
+.b.g:hover{background:var(--seed);color:var(--blush)}
+.plate{position:relative;justify-self:center;width:min(540px,100%)}
+.plate .ph{aspect-ratio:1;border-radius:50%;overflow:hidden;border:2px solid var(--poppy);padding:12px;background:var(--blush)}
+.plate .ph img{width:100%;height:100%;object-fit:cover;object-position:50% 78%;border-radius:50%}
+.plate .tag{position:absolute;right:-4px;bottom:16%;background:var(--seed);color:var(--blush);border-radius:999px;padding:10px 16px;font:400 14px/1.3 var(--r)}
+.plate .tag b{font:400 20px/1 var(--o);color:var(--crepe);display:block}
+.pp{position:absolute;pointer-events:none}
+.pp.p1{width:190px;left:-70px;bottom:-30px}
+.pp.p2{width:96px;left:18px;top:-6px;transform:rotate(30deg)}
+.pp.p3{width:74px;right:26px;top:0;transform:rotate(-20deg)}
+
+/* trust */
+.trust{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--hl);border-bottom:1px solid var(--hl)}
+.trust div{padding:22px 20px;border-left:1px solid var(--hl)}
+.trust div:first-child{border-left:0}
+.trust b{display:block;font:500 30px/1.1 var(--r);color:var(--seed)}
+.trust b i{font-style:normal;color:var(--poppy)}
+.trust span{font-size:14px;color:var(--soft)}
+.src{font-size:13px;color:var(--soft);margin-top:10px}
+
+/* seed divider */
+.div{height:26px;margin:56px auto;width:min(420px,70%);background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='26'%3E%3Cg fill='%2324212b'%3E%3Cellipse cx='8' cy='13' rx='3' ry='2.2' transform='rotate(30 8 13)'/%3E%3Cellipse cx='22' cy='9' rx='2.6' ry='2' transform='rotate(-20 22 9)'/%3E%3Cellipse cx='33' cy='16' rx='3' ry='2.1' transform='rotate(70 33 16)'/%3E%3Cellipse cx='47' cy='11' rx='2.4' ry='1.9'/%3E%3C/g%3E%3C/svg%3E") center/60px 26px repeat-x;display:flex;justify-content:center}
+.div svg{width:42px;height:42px;margin-top:-8px;background:var(--blush);padding:0 8px;box-sizing:content-box}
+
+/* money block */
+.list{background:var(--seed);color:#f7e7df;padding:76px 0 70px;position:relative}
+.list::before{content:"";position:absolute;inset:0;opacity:.6;background-image:radial-gradient(ellipse 2px 1.5px at 50% 50%,rgba(251,237,230,.18) 98%,transparent);background-size:26px 22px;pointer-events:none}
+.list .in{position:relative;display:grid;grid-template-columns:.85fr 1.15fr;gap:56px}
+.list h2{font:400 clamp(54px,7vw,88px)/.95 var(--o);color:var(--blush)}
+.list h2 em{font-style:normal;color:var(--poppy)}
+.list .intro p{margin-top:18px;color:#d9c8c1;max-width:24em}
+.list .note{font-size:13.5px;color:#b9a9a6;margin-top:22px;max-width:30em;border-left:2px solid var(--poppy);padding-left:12px}
+.list ul{list-style:none}
+.list li{display:grid;grid-template-columns:1fr auto;align-items:baseline;gap:16px;padding:16px 0;border-bottom:1px solid rgba(251,237,230,.16)}
+.list li:first-child{border-top:1px solid rgba(251,237,230,.16)}
+.list li span{font:400 21px/1.3 var(--r);color:#fff}
+.list li small{display:block;font-size:13px;color:#b9a9a6;margin-top:2px}
+.list li b{font:500 21px/1 var(--r);color:var(--crepe);font-variant-numeric:tabular-nums}
+.list li.sig span{color:var(--crepe)}
+.list li.sig span::before{content:"";display:inline-block;width:20px;height:20px;margin-right:10px;vertical-align:-3px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='12' r='11' fill='%23f4390f'/%3E%3Ccircle cx='11' cy='23' r='11' fill='%23e0320b'/%3E%3Ccircle cx='29' cy='23' r='11' fill='%23e0320b'/%3E%3Ccircle cx='20' cy='29' r='10' fill='%23f4390f'/%3E%3Ccircle cx='20' cy='20' r='5' fill='%2324212b'/%3E%3C/svg%3E") center/contain no-repeat}
+.list .order{margin-top:28px;display:flex;flex-wrap:wrap;gap:10px}
+.list .b{border-color:var(--blush);color:var(--blush)}
+.list .b:hover{background:var(--blush);color:var(--seed)}
+.list .b.p{border-color:var(--poppy-d)}
+
+/* savoury */
+.slane .in{display:grid;grid-template-columns:auto 1fr auto;gap:46px;align-items:center}
+.slane figure{position:relative}
+.slane .tall{width:300px;border-radius:150px 150px 18px 18px;overflow:hidden;border:2px solid var(--poppy)}
+.slane .tall img{transition:transform .5s}.slane .tall:hover img{transform:scale(1.045)}
+.slane .round{width:260px;aspect-ratio:1;border-radius:50%;overflow:hidden;border:2px solid var(--poppy)}
+.slane .round img{width:100%;height:100%;object-fit:cover}
+.slane figcaption{font-size:13px;color:var(--soft);margin-top:10px;text-align:center}
+.slane h2{font:400 clamp(44px,5.4vw,68px)/1 var(--o);color:var(--seed)}
+.slane h2 em{font-style:normal;color:var(--poppy)}
+.slane p{margin-top:16px;max-width:30em}
+.demo{margin-top:22px;border:1.5px dashed var(--poppy);border-radius:14px;padding:16px 18px;font-size:15px;background:rgba(255,255,255,.35)}
+.demo .cap{color:var(--poppy-d);display:block;margin-bottom:6px}
+
+/* hours + contact */
+.visit{padding:20px 0 80px}
+.visit .in{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.card{background:#fff8f4;border:1px solid var(--hl);border-radius:22px;padding:34px}
+.card h2{font:400 44px/1 var(--o);color:var(--seed);margin-bottom:18px}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+td{padding:12px 6px;border-bottom:1px solid var(--hl);font-size:17px}
+td:last-child{text-align:right;font-weight:500}
+tr[data-today] td{color:var(--poppy-d)}
+tr[data-today] td:first-child::after{content:" · dnes";font-size:13px;font-weight:500}
+.chk{display:inline-block;font:500 11px/1 var(--r);letter-spacing:.12em;text-transform:uppercase;background:var(--petal);color:var(--seed);border-radius:999px;padding:4px 8px;margin-left:8px;vertical-align:2px}
+.card .fine{font-size:13.5px;color:var(--soft);margin-top:14px}
+.addr{font:500 26px/1.25 var(--r);color:var(--seed)}
+.addr small{display:block;font-size:16px;font-weight:400;color:var(--soft)}
+.links{list-style:none;margin-top:20px}
+.links li{border-top:1px solid var(--hl)}
+.links a{display:flex;justify-content:space-between;align-items:center;min-height:52px;text-decoration:none;font-weight:500}
+.links a span{color:var(--soft);font-weight:400;font-size:15px}
+.links a:hover{color:var(--poppy-d)}
+footer{background:var(--seed);color:#d9c8c1;font-size:14px;padding:26px 0}
+footer .in{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.mb{position:fixed;left:0;right:0;bottom:0;z-index:30;display:none;grid-template-columns:1fr 1fr;gap:8px;padding:8px 16px calc(8px + env(safe-area-inset-bottom));background:rgba(251,237,230,.97);border-top:1px solid var(--hl)}
+.mb a{display:flex;align-items:center;justify-content:center;min-height:48px;border-radius:999px;text-decoration:none;font-weight:500;border:2px solid var(--seed)}
+.mb a.c{background:var(--poppy-d);border-color:var(--poppy-d);color:#fff}
+
+@media (max-width:980px){
+  .menu{display:none}.hd .call{margin-left:auto}
+  .hero .in{grid-template-columns:1fr;gap:34px}
+  .plate{width:min(440px,100%)}
+  .trust{grid-template-columns:1fr 1fr}
+  .trust div:nth-child(3){border-left:0}
+  .trust div:nth-child(n+3){border-top:1px solid var(--hl)}
+  .list .in{grid-template-columns:1fr;gap:30px}
+  .slane .in{grid-template-columns:1fr 1fr;gap:28px}
+  .slane .txt{grid-column:1/-1;order:-1}
+  .visit .in{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .hd{min-height:68px}
+  .ring{width:46px;height:46px;font-size:17px}
+  .logo b{display:none}
+  .call{padding:0 14px;font-size:15px}
+  .hero{padding:18px 0 54px}
+  .hero h1{font-size:clamp(54px,16vw,72px)}
+  .hero p.lead{font-size:17px}
+  .pp.p1{width:120px;left:-26px;bottom:-20px}
+  .pp.p2{width:64px;left:4px}
+  .pp.p3{width:50px;right:12px}
+  .plate .tag{right:0;bottom:6%;font-size:13px;padding:8px 13px}
+  .trust div{padding:16px 12px}
+  .trust b{font-size:22px}
+  .list{padding:56px 0}
+  .list li span,.list li b{font-size:18px}
+  .slane .in{gap:16px}
+  .slane .tall{width:100%;border-radius:120px 120px 14px 14px}
+  .slane .round{width:100%}
+  .card{padding:24px 18px;border-radius:18px}
+  .addr{font-size:22px}
+  .div{margin:40px auto}
+  .mb{display:grid}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="mak" viewBox="0 0 100 100">
+    <path d="M50 6 C70 6 80 20 76 34 C90 30 100 44 94 58 C88 72 72 74 64 70 C68 86 58 96 46 94 C30 92 26 80 30 70 C18 76 4 70 4 54 C4 40 16 32 28 36 C22 18 34 6 50 6Z" fill="#f4390f"/>
+    <path d="M28 36 C34 44 40 46 50 46 M76 34 C66 42 62 46 60 50 M64 70 C58 62 56 58 54 56 M30 70 C38 62 42 58 46 56" stroke="#c92c07" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <circle cx="50" cy="51" r="13" fill="#24212b"/>
+    <g fill="#24212b"><circle cx="50" cy="31" r="2.4"/><circle cx="68" cy="40" r="2.4"/><circle cx="70" cy="60" r="2.4"/><circle cx="51" cy="71" r="2.4"/><circle cx="31" cy="61" r="2.4"/><circle cx="32" cy="41" r="2.4"/></g>
+    <path d="M50 42 V60 M41 51 H59 M44 45 L56 57 M56 45 L44 57" stroke="#5c5466" stroke-width="1.6"/>
+  </symbol>
+</svg>
+
+<div class="bar">Neoficiálny návrh — nie je to oficiálny web podniku · ukážka od webdavid.sk, objednávky ani rezervácie tu nefungujú</div>
+
+<header class="in hd">
+  <a class="logo" href="#" aria-label="MAK palacinkáreň — úvod"><span class="ring">mak</span><b>palacinkáreň</b></a>
+  <nav class="menu" aria-label="Hlavná navigácia">
+    <a href="#palacinky">Palacinky</a><a href="#slane">Aj slané</a><a href="#hodiny">Hodiny</a><a href="#kontakt">Kontakt</a>
+  </nav>
+  <a class="call tn" href="tel:+421948020077">0948 020 077</a>
+</header>
+
+<main>
+<section class="hero seeds" aria-labelledby="h1">
+  <div class="in">
+    <div>
+      <p class="cap">Štúrovo námestie 121 · Trenčín</p>
+      <h1 id="h1">MAK <em>palacinkáreň</em></h1>
+      <p class="lead">Sladké aj slané palacinky v centre Trenčína. Klasika s džemom či tvarohom, čokoládové verzie — a samozrejme palacinka s makom a višňami.</p>
+      <div class="acts">
+        <a class="b p" href="#palacinky">Pozrieť palacinky</a>
+        <a class="b g" href="https://www.google.com/maps/search/?api=1&amp;query=MAK+palacink%C3%A1re%C5%88+%C5%A0t%C3%BArovo+n%C3%A1mestie+121+Tren%C4%8D%C3%ADn" target="_blank" rel="noopener">Ako k nám trafiť</a>
+      </div>
+    </div>
+    <figure class="plate">
+      <div class="ph"><img src="assets/palacinka-jahody-sturovo-namestie.webp" width="1040" height="1300" fetchpriority="high" alt="Palacinka s jahodami, čokoládovou polevou a šľahačkou na tanieri MAK, v pozadí Štúrovo námestie v Trenčíne"></div>
+      <svg class="pp p1" viewBox="0 0 100 100" aria-hidden="true"><use href="#mak"/></svg>
+      <svg class="pp p2" viewBox="0 0 100 100" aria-hidden="true"><use href="#mak"/></svg>
+      <svg class="pp p3" viewBox="0 0 100 100" aria-hidden="true"><use href="#mak"/></svg>
+      <figcaption class="tag"><b>na námestí</b>palacinka s výhľadom do mesta</figcaption>
+    </figure>
+  </div>
+</section>
+
+<div class="in">
+  <div class="trust">
+    <div><b class="tn">4,6 <i>★</i></b><span>Google · 353 hodnotení</span></div>
+    <div><b class="tn">4,8 <i>★</i></b><span>TripAdvisor · 32 hodnotení</span></div>
+    <div><b class="tn">100 %</b><span>odporúča na Facebooku (118 recenzií)</span></div>
+    <div><b>sladké · slané</b><span>palacinky v centre mesta</span></div>
+  </div>
+  <p class="src">Hodnotenia: Google a TripAdvisor podľa Wanderlog, Facebook podľa ich stránky · stav k 4. 10. 2026.</p>
+</div>
+
+<div class="div" aria-hidden="true"><svg viewBox="0 0 100 100"><use href="#mak"/></svg></div>
+
+<section class="list" id="palacinky" aria-labelledby="h-pal">
+  <div class="in">
+    <div class="intro">
+      <p class="cap" style="color:var(--petal)">Sladké palacinky</p>
+      <h2 id="h-pal">Vyberte si <em>tú svoju</em></h2>
+      <p>Porcia 200 g so základnou plnkou, k tomu čokoládová poleva a šľahačka.</p>
+      <p class="note">Ceny a názvy podľa ponuky na bistro.sk (stav 4. 10. 2026, ceny sa môžu líšiť od cien v prevádzke — overiť). Názvy sú preložené z anglického zoznamu. Zoznam slaných palaciniek tam uvedený nie je.</p>
+      <div class="order">
+        <a class="b p" href="tel:+421948020077">Zavolať</a>
+        <a class="b" href="https://www.bistro.sk/en/menu/mak-palacinkaren" target="_blank" rel="noopener">Ponuka na bistro.sk</a>
+      </div>
+    </div>
+    <ul>
+      <li class="sig"><span>S makom a višňami<small>mak ako v názve podniku</small></span><b>6,00 €</b></li>
+      <li><span>Džemová</span><b>5,80 €</b></li>
+      <li><span>Tvarohová</span><b>6,00 €</b></li>
+      <li><span>S bielou čokoládou<small>vegánska</small></span><b>6,00 €</b></li>
+      <li><span>S mliečnou čokoládou</span><b>6,00 €</b></li>
+      <li><span>S horúcou čokoládou</span><b>6,00 €</b></li>
+      <li><span>Čokoládovo-oriešková</span><b>6,00 €</b></li>
+      <li><span>Nutella</span><b>6,40 €</b></li>
+    </ul>
+  </div>
+</section>
+
+<div class="div" aria-hidden="true"><svg viewBox="0 0 100 100"><use href="#mak"/></svg></div>
+
+<section class="slane" id="slane" aria-labelledby="h-sl">
+  <div class="in">
+    <figure class="tall"><img src="assets/slana-palacinka.webp" width="540" height="960" loading="lazy" alt="Slaná palacinka s kyslou smotanou, pažítkou, paradajkou, rukolou a fazuľou"></figure>
+    <div class="txt">
+      <p class="cap">Nielen na sladko</p>
+      <h2 id="h-sl">Aj <em>slané</em> palacinky</h2>
+      <p>Na ich fotkách nájdete aj slané verzie — napríklad s kyslou smotanou, pažítkou, paradajkou a rukolou. Na Wanderlogu sú spomenuté aj bezlepkové možnosti.</p>
+      <div class="demo"><span class="cap">Ukážka návrhu</span>Ponuku slaných palaciniek, ceny a bezlepkové možnosti doplní podnik.</div>
+    </div>
+    <figure><div class="round"><img src="assets/palacinka-banan-cucoriedky.webp" width="315" height="203" loading="lazy" alt="Sladká palacinka s banánom, jahodami, čučoriedkami a čokoládou"></div><figcaption>Z ich Facebooku: banán, jahody, čučoriedky</figcaption></figure>
+  </div>
+</section>
+
+<div class="div" aria-hidden="true"><svg viewBox="0 0 100 100"><use href="#mak"/></svg></div>
+
+<section class="visit" aria-label="Hodiny a kontakt">
+  <div class="in">
+    <div class="card" id="hodiny">
+      <h2>Otváracie hodiny</h2>
+      <table>
+        <tr data-day="1"><td>Pondelok</td><td>10:00 – 19:00</td></tr>
+        <tr data-day="2"><td>Utorok</td><td>10:00 – 19:00</td></tr>
+        <tr data-day="3"><td>Streda</td><td>10:00 – 19:00</td></tr>
+        <tr data-day="4"><td>Štvrtok</td><td>10:00 – 19:00</td></tr>
+        <tr data-day="5"><td>Piatok</td><td>10:00 – 20:00</td></tr>
+        <tr data-day="6"><td>Sobota</td><td>10:00 – 20:00</td></tr>
+        <tr data-day="0"><td>Nedeľa <span class="chk">overiť</span></td><td>11:00 – 19:00</td></tr>
+      </table>
+      <p class="fine">Podľa ich stránky na Facebooku. Iný zdroj uvádza v nedeľu zatváranie o 18:00 — overte si to pred návštevou.</p>
+    </div>
+    <div class="card" id="kontakt">
+      <h2>Kde nás nájdete</h2>
+      <p class="addr">Štúrovo námestie 121<small>911 01 Trenčín</small></p>
+      <ul class="links">
+        <li><a class="tn" href="tel:+421948020077">+421 948 020 077 <span>zavolať</span></a></li>
+        <li><a href="mailto:makpalacinkaren@gmail.com">makpalacinkaren@gmail.com <span>e-mail</span></a></li>
+        <li><a href="https://www.facebook.com/makpalacinkaren/" target="_blank" rel="noopener">Facebook <span>@makpalacinkaren</span></a></li>
+        <li><a href="https://www.instagram.com/makpalacinkaren/" target="_blank" rel="noopener">Instagram <span>@makpalacinkaren</span></a></li>
+        <li><a href="https://www.google.com/maps/search/?api=1&amp;query=MAK+palacink%C3%A1re%C5%88+%C5%A0t%C3%BArovo+n%C3%A1mestie+121+Tren%C4%8D%C3%ADn" target="_blank" rel="noopener">Google Maps <span>navigovať</span></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="in"><span>Neoficiálny návrh webu · webdavid.sk · 2026</span><span>MAK palacinkáreň · Štúrovo námestie 121, Trenčín</span></div></footer>
+
+<nav class="mb" aria-label="Rýchle akcie">
+  <a class="c" href="tel:+421948020077">Zavolať</a>
+  <a href="https://www.google.com/maps/search/?api=1&amp;query=MAK+palacink%C3%A1re%C5%88+%C5%A0t%C3%BArovo+n%C3%A1mestie+121+Tren%C4%8D%C3%ADn" target="_blank" rel="noopener">Navigovať</a>
+</nav>
+
+<script>
+(function(){try{var d=new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/Bratislava",weekday:"short"}).format(new Date());
+var n={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[d];var r=document.querySelector('tr[data-day="'+n+'"]');if(r)r.setAttribute("data-today","");}catch(e){}})();
+</script>
